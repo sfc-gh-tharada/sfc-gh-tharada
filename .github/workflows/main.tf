@@ -2,12 +2,11 @@ terraform {
   required_providers {
     snowflake = {
       source  = "chanzuckerberg/snowflake"
-      version = "0.25.17"
+      version = "1.1.9"
     }
   }
   backend "remote" {
     organization = "tharada-test-org"
-
     workspaces {
       name = "gh-actions-demo"
     }
